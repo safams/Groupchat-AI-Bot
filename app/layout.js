@@ -10,7 +10,6 @@ export default function RootLayout({ children }) {
         <UserContextProvider>
           {children}
         </UserContextProvider>
-
       </body>
     </html>
   )

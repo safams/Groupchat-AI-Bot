@@ -1,0 +1,58 @@
+.main {
+    padding: 5rem;
+    color: rgb(0, 0, 0); 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    display: block;
+    overflow: auto;
+    background: #c2c0c0;
+    padding: 2rem;
+    border-radius: 9px;
+}
+ 
+.input {
+text-align: center;
+  height: 20px;
+  width: 200px;
+  border-radius: 10px;
+  
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5rem;
+  }
+
+.button {
+    border-radius: 10px;
+    background-color: #8b8b8b;
+  }
+
+.blue_bubble {
+    width: fit-content;
+    background: dodgerblue;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-left: auto;
+} 
+
+.white_bubble {
+    
+    width: fit-content;
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+} 
+    

@@ -4,7 +4,6 @@ import { useRouter } from 'next/navigation'
 import { useState } from 'react';
 import { useUserContext } from './user';
 
-
 export default function Home() {
   const { setCurrentUser } = useUserContext();
   const [username, setUsername] = useState("");
@@ -18,17 +17,18 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder='Username'
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          required
-        />
-        <button type='submit'>Submit</button>
-      </form>
+      <div className={styles.container}>
+        <form onSubmit={handleSubmit} className={styles.form}>
+          <input className={styles.input}
+            type="text"
+            placeholder='Username'
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            required
+          />
+          <button type='submit' className={styles.button}>Submit</button>
+        </form>
+      </div>
     </main>
   )
 }

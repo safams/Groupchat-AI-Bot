@@ -4,7 +4,6 @@ import { createContext, useState, useContext } from "react";
 
 const UserContext = createContext();
 
-
 export const UserContextProvider = ({ children }) => {
     const [currentUser, setCurrentUser] = useState("new user");
     return (
