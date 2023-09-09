@@ -1,17 +1,19 @@
 "use client"
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useUserContext } from "../user";
 
 export default function Chat() {
     const [msgContent, setMsgContent] = useState("");
-
+    const { currentUser } = useUserContext();
 
     const handleSendMessage = (e) => {
         e.preventDefault();
-    }
+    };
 
     return (
         <main >
-            Hi! Start typing below to chat!
+            Hi {currentUser}! Start typing below to chat!
+
             <form onSubmit={handleSendMessage}>
                 <input
                     type="text"
